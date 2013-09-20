@@ -20,6 +20,9 @@ have this contextual information only pop up if an error occur. Furthermore,
 this information can be inlined into your stacktrace, augmenting the raw line
 numbers/method names with parameter values and custom messages.
 """
+
+requires = ['six']
+
 setup(name='logstack',
       version='0.0',
       packages=['logstack'],
@@ -33,4 +36,5 @@ setup(name='logstack',
       classifiers=[
         "Development Status :: 2 - Pre-Alpha",
         "License :: OSI Approved :: Apache Software License",
-        'Programming Language :: Python'])
+        'Programming Language :: Python'],
+      install_requires=requires,)
